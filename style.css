@@ -228,6 +228,10 @@ figcaption p {
     .prev, .next,.text {
         font-size: 11px
     }
+
+    .card {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -237,6 +241,10 @@ figcaption p {
 
     .card {   
         width: 400px;
+    }
+
+    .home-header {
+        font-size: 20%;
     }
 }
 
