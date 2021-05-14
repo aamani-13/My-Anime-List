@@ -240,6 +240,12 @@ figcaption p {
     }
 }
 
+@media screen and (min-width: 400px) and (max-width: 649px) {
+    .home-header {   
+      font-size: 40%;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .home-header {   
       font-size: 90%;
