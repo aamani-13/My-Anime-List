@@ -7,6 +7,8 @@ body {
 }
 
 .home-header {
+    white-space: nowrap;
+    overflow: hidden;
     text-align: center;
     font-size: 500%;
     color: rgb(178, 0, 255);
@@ -52,12 +54,6 @@ body {
     
 }
 
-@media screen and (max-width: 650px) {
-    .topnav a {
-        width: 100%;
-    }
-}
-
 #list-heading {
     background-color: rgb(40, 40, 40); 
     color: rgb(255, 255, 255);
@@ -95,15 +91,12 @@ figure {
 .card {
     border-radius: 20px;
     background-color: rgb(30, 30, 30);
+    color: white;
     width: 250px;
     padding: 10px;
     margin-left: 25px;
     margin-top: 8px;
     opacity: 1;
-}
-
-.card p {
-    color: white;
 }
 
 .card:hover {
@@ -112,11 +105,11 @@ figure {
 
 figcaption{
     background-color: rgba(30, 30, 30);
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 30px;
     right: 0;
-    padding: 0.1em 20px;
+    padding: 0.2em 20px;
     min-height: 7em;
     opacity: 1;
     transition: 0.5s;
@@ -142,127 +135,107 @@ figcaption p {
     opacity: 0;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-    position: relative;
-}
-  
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(178, 0, 255);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-  /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-  /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgb(178, 0, 255, 0.8);
-    color: white;
-}
-  
-  /* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 18px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-  
-  /* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-  
-.active, .dot:hover {
-    background-color: #717171;
-}
-  
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-  
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
- 
-
-@media only screen and (max-width: 300px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .prev, .next,.text {
         font-size: 11px
     }
 
     .card {
-        width: 200px;
+        width: 80%;
+        margin-left: 25px;
+        margin-top: 8px;
     }
-}
 
-@media screen and (max-width: 500px) {
-    .slideshow-container {   
+    .home-header {
+        font-size: 120%;
+        padding: 120px 0px 120px 0px;
+    }
+
+    figcaption{
+        padding: 0.2em 10px;
+        min-height: 7.5em;
+        width: 75%;
+        left: 30px;
+    }
+
+    .topnav a {
         width: 100%;
     }
+}
 
-    .card {   
-        width: 400px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card {
+        width: 80%;
+        margin-left: 50px;
+        margin-top: 8px;
     }
 
     .home-header {
-        font-size: 20%;
+        font-size: 300%;
+        padding: 180px 0px 230px 0px;
+    }
+
+    figcaption{
+        left: 50px;
+        padding: 0.2em 20px;
+        min-height: 5em;
+        width: 78%;
+        left: 60px;
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 649px) {
-    .home-header {   
-      font-size: 40%;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 80%;
+        margin-left: 70px;
+        margin-top: 8px;
     }
-}
 
-@media screen and (max-width: 650px) {
-    .home-header {   
-      font-size: 90%;
-    }
-}
-
-@media screen and (min-width: 651px) and (max-width: 1000px) {
     .home-header {
-        font-size: 200%;
+        font-size: 300%;
+        padding: 180px 0px 230px 0px;
+    }
+
+    figcaption{
+        padding: 0.5em 10px;
+        min-height: 5em;
+        width: 78%;
+        left: 90px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card {
+        width: 250px;
+        margin-left: 45px;
+        margin-top: 8px;
+    }
+
+    figcaption{
+        padding: 0.5em 10px;
+        min-height: 7em;
+        width: 75%;
+        left: 60px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card {
+        width: 250px;
+        margin-left: 25px;
+        margin-top: 8px;
+    }
+
+    figcaption{
+        padding: 0.5em 10px;
+        min-height: 7em;
+        width: 85%;
+        left: 30px;
     }
 }
 
