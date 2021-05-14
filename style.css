@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.home-header {
+    text-align: center;
+    font-size: 500%;
+    color: rgb(178, 0, 255);
+    padding: 160px;
+    transition: 1s;
+}
+
+.home-header:hover {
+    color: rgb(76, 0, 109);
+}
+
+.header {
+    background-color: rgb(40, 40, 40);
+    color: rgb(178, 0, 255);
+    padding: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.header:hover{
+    color: rgb(76, 0, 109);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(40, 40, 40);
+    margin-top: 8px;
+}
+
+.topnav a {
+    background-color: rgb(40, 40, 40);
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    overflow: visible;
+    padding: 14px 16px;
+    transition: 1s;
+}
+  
+.topnav a:hover {
+    background-color: rgb(178, 0, 255);
+    
+}
+
+@media screen and (max-width: 650px) {
+    .topnav a {
+        width: 100%;
+    }
+}
+
+#list-heading {
+    background-color: rgb(40, 40, 40); 
+    color: rgb(255, 255, 255);
+    padding: 15px; 
+    width: 100%; 
+    text-align: center;
+}
+
+#list-heading:hover {
+    color: rgb(178, 0, 255);
+    transition: 1s;
+}
+
+
+figure {
+    margin: 10px;
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+    position:relative;
+    padding-bottom:2.8em;
+}
+
+.iconimg img{
+    filter: brightness(1.1);
+    display: block; 
+    border-radius: 10px;
+    padding: 5px; 
+    width: 158px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: rgb(30, 30, 30);
+    width: 250px;
+    padding: 10px;
+    margin-left: 25px;
+    margin-top: 8px;
+    opacity: 1;
+}
+
+.card p {
+    color: white;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+figcaption{
+    background-color: rgba(30, 30, 30);
+    position:absolute;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+    padding: 0.1em 20px;
+    min-height: 7em;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+figcaption p {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#grid {
+    background-color: rgb(40, 40, 40);
+    margin-top: 8px;
+}
+
+#grid figure {
+    padding:0;
+}
+
+#grid figure:hover figcaption {
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    position: relative;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(178, 0, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgb(178, 0, 255, 0.8);
+    color: white;
+}
+  
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+ 
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {
+        font-size: 11px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slideshow-container {   
+        width: 100%;
+    }
+
+    .card {   
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home-header {   
+      font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+    .home-header {
+        font-size: 200%;
+    }
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(40, 40, 40);
+    margin-top: 20px;
+}
