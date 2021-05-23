@@ -3,6 +3,7 @@
     <head>
         <title>My Anime List</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="animation.css">
         <link rel="icon" type="image/png" href="icon.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,7 @@
         <meta name="author" content="Madhavasai">
     </head>
     <body>
-        <div class="header">
+        <div class="heading">
             <h1> My Anime List </h1>
         </div>
 
@@ -22,7 +23,7 @@
                 <a href="#home"> Home </a>
                 <a href="#list"> List </a>
                 <a href="#"> Info </a>
-                <a href="#"> Progress </a>
+                <a href="#Progress"> Progress </a>
                 <a href="#favourites"> Favourites </a>
             </div>  
             <div class="home-header">
@@ -34,12 +35,14 @@
             List
         -->
         <section id="list">
-            <h1 id="list-heading"> My List </h1>
+            <div class="heading">
+                <h1> My List </h1>
+            </div>
             <div id="grid">
                 <figure>
                     <div class="card">
                         <div class="iconimg"> <a href="Anime/naruto.html"> <img src="Images/Naruto.jpg" alt="Naruto"/> </a> </div>
-                        <p>Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja.... </p>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
                     </div>
                     <figcaption>
                         <p style="font-size: 23px;"> Naruto</p>
@@ -47,7 +50,7 @@
                 </figure>
                 <figure>
                     <div class="card">
-                        <div class="iconimg">  <a> <img src="Images/Naruto Shippuden.jpg"  alt="Naruto Shippuden"/> </a> </div>
+                        <div class="iconimg">  <a href="Anime/naruto.html" > <img src="Images/Naruto Shippuden.jpg"  alt="Naruto Shippuden"/> </a> </div>
                         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
                     </div>
                     <figcaption>
@@ -56,9 +59,9 @@
                 </figure>
                 <figure>
                     <div class="card">
-                        <div class="iconimg">  <a> <img src="Images/Boruto.jpg" alt="Boruto"/> </a> </div>
+                        <div class="iconimg">  <a href="Anime/boruto.html"> <img src="Images/Boruto.jpg" alt="Boruto"/> </a> </div>
                         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
-                    </div>
+                    </div> 
                     <figcaption>
                         <p style="font-size: 23px;"> Boruto </p>
                     </figcaption>
@@ -68,7 +71,6 @@
                         <div class="iconimg"> <a> <img src="Images/Death Note.jpg" alt="Death Note"/> </a> </div>
                         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
                     </div>
-                    
                     <figcaption>
                         <p style="font-size: 23px;"> Death Note </p>
                     </figcaption>
@@ -78,9 +80,8 @@
                         <div class="iconimg">  <a> <img src="Images/Kimetsu no Yaiba (Demon Slayer).jpg" alt="Kimetsu no Yaiba (Demon Slayer)"/> </a> </div>
                         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
                     </div>
-                   
                     <figcaption>
-                        <p style="font-size: 23px;"> Kimetsu no Yaiba (Demon Slayer) </p>
+                        <p style="font-size: 23px;"> Kimetsu no Yaiba</p>
                     </figcaption>
                 </figure>
                 <figure>
@@ -89,16 +90,16 @@
                         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
                     </div>
                     <figcaption>
-                        <p style="font-size: 23px;"> Kimetsu no Yaiba (Demon Slayer)  Mugen Train</p>
+                        <p style="font-size: 23px;"> Kimetsu no Yaiba Mugen Train</p>
                     </figcaption>
                 </figure>
                 <figure>
                     <div class="card">
                         <div class="iconimg"> <a> <img src="Images/Kimetsu no Yaiba (Demon Slayer) Yuukaku-Hen.jpg" alt="Kimetsu no Yaiba (Demon Slayer) Yuukaku-Hen" /> </a> </div>
                         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
-                    </div>
+                    </div>  
                     <figcaption>
-                        <p style="font-size: 23px;"> Kimetsu no Yaiba (Demon Slayer) Yuukaku-Hen </p>
+                        <p style="font-size: 23px;"> Kimetsu no Yaiba Yuukaku-Hen </p>
                     </figcaption>
                 </figure>
                 <figure>
@@ -112,7 +113,7 @@
                 </figure>
                 <figure>
                     <div class="card">
-                        <div class="iconimg"> <a> <img src="Images/KonoSuba.jpg" alt="KonoSuba"/> </a> </div>
+                        <div class="iconimg"> <a href="Anime/konosuba.html"> <img src="Images/KonoSuba.jpg" alt="KonoSuba"/> </a> </div>
                         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
                     </div>
                     <figcaption>
@@ -155,14 +156,171 @@
                         <p style="font-size: 23px;"> Sword Art Online </p>
                     </figcaption>
                 </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/Ijiranaide nagatoro-san.jpg" alt="Ijiranaide nagatoro-san"/> </a> </div>
+                        <p>High schooler Hayase Nagatoro loves to spend her free time doing one thing, and that is to bully h...</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;"> Ijiranaide Nagatoro-san </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/BytheGraceoftheGods.jpg" alt="by the grace of god"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;"> By The Grace Of God </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/yusibu-i couldn't become a hero, so i reluctantly decided to get a job.jpg" alt="yusibu-i couldn't become a hero, so i reluctantly decided to get a job"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;"> Yusibu-I Couldn't Become a Hero, So I Reluctantly Decided to Get a Job </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/redo of healer.jpg" alt="redo of healer"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;"> Redo Of Healer </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/Mushoku_Tensei.png" alt=" Mushoku tensei"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;">  Mushoku Tensei </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/goblin slayer.jpg" alt="goblin slayer"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;">  Goblin Slayer </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/Tokyo Revens.jpg" alt="Tokyo Ravens"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;"> Tokyo Ravens </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/Sunoharasou No Kanrinin San.jpg" alt="Sunoharasou No Kanrinin San"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;">  Sunoharasou No Kanrinin San </p>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <div class="card">
+                        <div class="iconimg"> <a> <img src="Images/MisFit Of Demon King Academy.jpg" alt="Sunoharasou No Kanrinin San"/> </a> </div>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,gna aliqua.</p>
+                    </div>
+                    <figcaption>
+                        <p style="font-size: 23px;"> Misfit Of Demon King Academy </p>
+                    </figcaption>
+                </figure>  
             </div>    
         </section>
 
         <!--
             Favourites
         -->
-        <section id="favourites">  
-           
+        <section id="favourites"> 
+            <div class="heading">
+                <h1> Favourites </h1>
+            </div>
+        </section>
+
+        <section id="Progress">
+            <div class="heading">
+                <h1> Progress </h1>
+            </div>
+            
+            <p style="color: white;" id="completed-watching-count"></p>
+            <table>
+                <tr>
+                    <th>Anime Name</th>
+                    <th>Progress</th>
+                    <th>Episodes</th>
+                </tr>
+                <tr>
+                    <td>Naruto</td>
+                    <td id="completed">Completed Watching</td>
+                    <td>Episode 220/220</td>
+                </tr>
+                <tr>
+                    <td>Naruto Shippuden</td>
+                    <td id="completed">Completed Watching</td>
+                    <td>Episode 500/500</td>
+                </tr>
+                <tr>
+                    <td>Boruto</td>
+                    <td>Watching</td>
+                    <td>Episode 199/199</td>
+                </tr>
+                <tr>
+                    <td>Death Note</td>
+                    <td id="completed">Completed Watching</td>
+                    <td>Episode 37/37</td>
+                </tr>
+                <tr>
+                    <td>Kimetsu no Yaiba</td>
+                    <td id="completed">Completed Watching</td>
+                    <td>Episode 26/26</td>
+                </tr>
+                <tr>
+                    <td>That Time I Got Reincarnated As a Slime</td>
+                    <td>Watching Watching</td>
+                    <td>Episode S1 21/21 S2 12/12</td>
+                </tr>
+                <tr>
+                    <td>KonoSuba </td>
+                    <td id="completed">Completed Watching</td>
+                    <td>Episode S1 11/11 S2 10/10</td>
+                </tr>
+                <tr>
+                    <td>How to Not Summon Demon Lord </td>
+                    <td id="completed">Completed Watching</td>
+                    <td>Episode 12/12</td>
+                </tr>
+                <tr>
+                    <td>Re Zero-Starting Life in Another </td>
+                    <td id="completed">Completed Watching</td>
+                    <td>Episode S1 24/24 S2 1/25</td>
+                </tr>
+                <tr>
+                    <td>Sword Art Online</td>
+                    <td>Watching</td>
+                    <td>Episode S1 11</td>
+                </tr>
+                <tr>
+                    <td>Ijiranaide nagatoro-san</td>
+                    <td>Watching</td>
+                    <td>Episode 5</td>
+                </tr>
+            </table>
+            <script>
+                
+            </script>
+            <p> Progress is updated weekly. updated at (17-05-2021) </p>
         </section>
 
         <!--

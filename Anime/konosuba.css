@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    padding: 0;
+}
+
+.heading {
+    background-color: rgb(40, 40, 40);
+    color: rgb(178, 0, 255);
+    padding: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.heading:hover{
+    color: rgb(181, 33, 245);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(40, 40, 40);
+    margin-top: 8px;
+}
+
+.topnav a {
+    background-color: rgb(40, 40, 40);
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    overflow: visible;
+    padding: 14px 16px;
+    transition: 1s;
+}
+  
+.topnav a:hover {
+    background-color: rgb(178, 0, 255);
+}
+
+figure {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    padding-bottom:2.8em;
+    color: white;
+}
+
+.naruto-side-image {
+    filter: brightness(1.1);
+    display: block; 
+    position: relative;
+    border-radius: 10px;
+    padding: 5px; 
+    width: 158px;
+    height: 430px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.para {
+    color: white;
+    padding-top: 10px;
+}
+
+#para a {
+    text-decoration: none;
+    color: rgb(178, 0, 255);
+}
+
+#para a:hover {
+    color: rgb(181, 33, 245);
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    transition: 1s;
+}
+
+.column:hover {
+    transform: scale(1.03);
+}
+  
+.card {
+    background-color: rgb(40, 40, 40);
+}
+
+.characters-heading {
+    background-color: rgb(40, 40, 40);
+    color: rgb(178, 0, 255);
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: 1s;
+}
+  
+.container {
+    padding: 0 16px;
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    color: white;
+}
+
+.container h2 {
+    color: rgb(178, 0, 255);
+} 
+
+.ost-heading {
+    background-color: rgb(40, 40, 40);
+    color: rgb(178, 0, 255);
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 1s;
+}
+
+.ost-column {
+    float: left;
+    width: 33.3%;
+    padding: 0 8px;
+}
+
+.ost-container {
+    padding: 10px 16px;
+    content: "";
+    clear: both;
+    display: table;
+    color: white;
+}
+
+.ost-container img {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    width: 50%;
+    height: 40%;
+    margin-left: 120px;
+}
+
+.ost-container img:hover {
+    box-shadow: 0 0 10px 1px rgba(178, 0, 255, 0.5);
+}
+  
+.ost-container h2 {
+    color: rgb(178, 0, 255);
+    text-align: center;
+}
+
+.ost-container button{
+    background-color: rgb(178, 0, 255);
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 30px;
+}
+
+.ost-container button:hover {
+    background-color: white;
+    color: rgb(178, 0, 255);
+}
+
+#headline {
+    background-color: rgb(178, 0, 255);
+    color: white;
+    width: 175px;
+    border-radius: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .naruto-side-image {
+        right: 60px;
+        top: 5px;
+    }
+
+    .topnav a {
+        width: 100%;
+    }
+
+    .column {
+        display: inline-table;
+        width: 100%;
+    }
+
+    .characters-heading {
+        padding: 20px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .ost-column {
+        width: 100%;
+    }
+
+    .ost-container button {
+        width: 100%;
+        border-radius: 50%;
+    } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .naruto-side-image {
+        right: 60px;
+        top: 5px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .ost-column {
+        width: 33.3%;
+    }
+
+    .ost-container button {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .ost-container button {
+        padding: 20px;
+        width: 60px;
+        border-radius: 100%;
+    }
+}

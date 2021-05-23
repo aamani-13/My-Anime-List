@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> My Anime List - KonoSuba </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="konosuba.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="heading">
+            <h1> Naruto </h1>
+        </div>
+      
+        <div class="topnav">
+            <a href="#home"> Home </a>
+            <a href="#list"> List </a>
+            <a href="#"> Info </a>
+            <a href="#Progress"> Progress </a>
+            <a href="#favourites"> Favourites </a>
+        </div>
+      
+            
+        <section id="introduction">
+            <figure>
+                <div class="card">
+                    <div class="naruto-side-image"> <a> <img src="Images/Naruto/naruto.jpg" alt="Naruto Image"> </a> </div>
+                    <p id="para"> Naruto is a Japanese manga series written and illustrated by  <a href="#Masashi-Kishimoto"> Masashi Kishimoto </a>. It tells the story of <a href="#Naruto-Uzumaki"> Naruto Uzumaki </a>, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village. The story is told in two parts – the first set in Naruto's pre-teen years, and the second in his teens. </p>
+                </div>
+            </figure>          
+          </section>
+      
+          <section id=characters>
+            <div class="characters-heading">
+                <h1> Characters </h1>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="Images/Naruto/Naruto.png" alt="Jane"  style="width:100%"> 
+                        <div class="container">
+                            <h2>Naruto</h2>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="column">
+                    <div class="card">
+                        <img src="Images/Naruto/Sasuke.png" alt="Mike" style="width:100%">
+                        <div class="container">
+                            <h2>Sasuke</h2>
+                        </div>
+                    </div>
+                </div>
+                      
+                <div class="column">
+                    <div class="card">
+                        <img src="Images/Naruto/Sakura.png" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Sakura</h2>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="column">
+                    <div class="card">
+                        <img src="Images/Naruto/Kakashi.png" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Kakashi</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <section id="ost">
+            <div class="ost-heading">
+              <h1> Characters </h1>
+            </div>
+            <p style="color: white; text-align: center;"> There are my favourite ost in naruto </p>
+              
+            <script>
+                function Deleting(name){
+                    document.getElementById('tracktime-' + name).innerHTML = ''; 
+                    document.getElementById('volume-' + name).innerHTML = '';
+                };
+            </script>
+      
+            <audio id="Despair" src="Audio/Naruto/Naruto Shippuden Soundtrack 19- Despair [Extended].mp3"  ontimeupdate="document.getElementById('tracktime-despair').innerHTML = 'Time: ' + Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration/60) + ' mins'; document.getElementById('volume-despair').innerHTML = 'volume: ' + Math.floor(this.volume*100)"></audio>
+            <div class="ost-column">
+                <div class="card">
+                    <div class="ost-container">
+                        <img src="Audio/Naruto/Despair.png"/>
+                        <h2>Naruto Shippuden Despair [Extended] </h2>
+                        <p id="tracktime-despair" style="color: white; text-align: center;"></p>
+                        <p id="volume-despair" style="color: white; text-align: center;"></p>
+                        <button onclick="document.getElementById('Despair').play()">▶</button> 
+                        <button onclick="document.getElementById('Despair').pause()">⏸</button> 
+                        <button onclick="document.getElementById('Despair').volume += 0.1">⬆</button> 
+                        <button onclick="document.getElementById('Despair').volume -= 0.1">⬇</button> 
+                        <button onclick="Deleting('despair')">❌</button> 
+                    </div>
+                </div> 
+            </div>
+      
+            <audio id="Old-Friend" src="Audio/Naruto/Naruto Shippuden - Old Friend (LSB Remix).mp3"  ontimeupdate="document.getElementById('tracktime-old-friend').innerHTML = 'Time: ' + Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration/60) + ' mins'; document.getElementById('volume-old-friend').innerHTML = 'volume: ' + Math.floor(this.volume*100)"></audio>
+            <div class="ost-column">
+                <div class="card">
+                    <div class="ost-container">
+                        <h2>Naruto Shippuden Old Friend </h2>
+                        <p id="tracktime-old-friend" style="color: white; text-align: center;"></p>
+                        <p id="volume-old-friend" style="color: white; text-align: center;"></p>
+                        <button onclick="document.getElementById('Old-Friend').play()">▶</button> 
+                        <button onclick="document.getElementById('Old-Friend').pause()">⏸</button> 
+                        <button onclick="document.getElementById('Old-Friend').volume += 0.1">⬆</button> 
+                        <button onclick="document.getElementById('Old-Friend').volume -= 0.1">⬇</button> 
+                        <button id="ost-cancel" onclick="Deleting('old-friend')">❌</button> 
+                    </div>
+                </div> 
+            </div>
+      
+            <audio id="Tragic" src="Audio/Naruto/Naruto Shippuden - Tragic (Anigam3 Remix) [SM Release].mp3"  ontimeupdate="document.getElementById('tracktime-tragic').innerHTML = 'Time: ' + Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration/60) + ' mins'; document.getElementById('volume-tragic').innerHTML = 'volume: ' + Math.floor(this.volume*100)"></audio>
+            <div class="ost-column">
+                <div class="card">
+                    <div class="ost-container">
+                        <h2>Naruto Shippuden Old Friend </h2>
+                        <p id="tracktime-tragic" style="color: white; text-align: center;"></p>
+                        <p id="volume-tragic" style="color: white; text-align: center;"></p>
+                        <button onclick="document.getElementById('Tragic').play()">▶</button> 
+                        <button onclick="document.getElementById('Tragic').pause()">⏸</button> 
+                        <button onclick="document.getElementById('Tragic').volume += 0.1">⬆</button> 
+                        <button onclick="document.getElementById('Tragic').volume -= 0.1">⬇</button>  
+                        <button id="ost-cancel" onclick="Deleting('tragic')">❌</button> 
+                    </div>
+                </div> 
+            </div>
+          </section>
+    </body>
+</html>
